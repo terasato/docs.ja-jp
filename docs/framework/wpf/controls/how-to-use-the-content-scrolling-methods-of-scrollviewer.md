@@ -17,15 +17,15 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33552767"
 ---
 # <a name="how-to-use-the-content-scrolling-methods-of-scrollviewer"></a>方法 : ScrollViewer のコンテンツ スクロール メソッドを使用する
-この例のスクロール メソッドを使用する方法を示しています、<xref:System.Windows.Controls.ScrollViewer>要素。 これらのメソッドは、増分、コンテンツの行またはページのいずれかのスクロールを提供する<xref:System.Windows.Controls.ScrollViewer>です。  
+この例は、<xref:System.Windows.Controls.ScrollViewer>のスクロール メソッドを使用する方法を示しています。これらのメソッドにより、<xref:System.Windows.Controls.ScrollViewer>内のコンテンツを、行毎あるいはページ毎に、段階的にスクロールできます。  
   
 ## <a name="example"></a>例  
- 次の例を作成、<xref:System.Windows.Controls.ScrollViewer>という`sv1`、子ホスト<xref:System.Windows.Controls.TextBlock>要素。 <xref:System.Windows.Controls.TextBlock>が親よりも大きい<xref:System.Windows.Controls.ScrollViewer>、スクロールを有効にするためにスクロール バーが表示されます。 <xref:System.Windows.Controls.Button> スクロールのさまざまな方法を表す要素は別個の左側にドッキングされて<xref:System.Windows.Controls.StackPanel>です。 各<xref:System.Windows.Controls.Button>で、[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]ファイルがでスクロール動作を制御する関連のカスタム メソッドを呼び出して<xref:System.Windows.Controls.ScrollViewer>です。  
+ 次の例では、`sv1`という名前の<xref:System.Windows.Controls.ScrollViewer>を作成し、<xref:System.Windows.Controls.TextBlock>要素をホストさせています。<xref:System.Windows.Controls.TextBlock>は親である<xref:System.Windows.Controls.ScrollViewer>よりも大きいので、スクロールを有効にするためにスクロール バーが表示されます。様々なスクロール方法を表す<xref:System.Windows.Controls.Button>要素が，独立した<xref:System.Windows.Controls.StackPanel>に格納されて左側にドッキングされています。[!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]内の各<xref:System.Windows.Controls.Button>は、<xref:System.Windows.Controls.ScrollViewer>内のスクロールの挙動をコントロールする，関連したカスタムメソッドを呼び出します。
   
  [!code-xaml[ScrollViewerMethods#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewerMethods/CSharp/Window1.xaml#1)]  
   
- 次の例では、<xref:System.Windows.Controls.ScrollViewer.LineUp%2A>と<xref:System.Windows.Controls.ScrollViewer.LineDown%2A>メソッドです。  
-  
+ 次の例では、<xref:System.Windows.Controls.ScrollViewer.LineUp%2A>と<xref:System.Windows.Controls.ScrollViewer.LineDown%2A>メソッドを使用します。
+ 
  [!code-csharp[ScrollViewerMethods#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewerMethods/CSharp/Window1.xaml.cs#2)]
  [!code-vb[ScrollViewerMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewerMethods/VisualBasic/Window1.xaml.vb#2)]  
   
